@@ -19,11 +19,11 @@ Features
 
 Encryption Algorithms Used
 
-1. **Caesar Cipher**
-2. **Base64 Encoding**
-3. **AES (Advanced Encryption Standard)**
-4. **SHA-256 Hashing**
-5. **Reverse Cipher (Basic transformation)**
+1. Caesar Cipher
+2. Base64
+3. AES
+4. SHA-256
+5. Reverse Cipher
 
 ---
 
@@ -34,17 +34,11 @@ Technologies Used
 - **Styling:** Custom Dark Theme CSS
 - **Version Control:** Git & GitHub
 
----
+--How to Run
 
-Project Structure
+1. Clone the repository
+2. Install Flask
+3. Run `python app.py`
+4. Open browser at `http://127.0.0.1:5000`
 
-Text-Encryption-Decryption-Web-App/
-│
-├── app.py
-├── templates/
-│ └── index.html
-├── static/
-│ ├── style.css
-│ └── script.js
-└── README.md
 

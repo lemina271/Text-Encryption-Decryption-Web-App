@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Text Encryption Tool</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>🔐 Text Encryption & Decryption</h1>
+
+    <form method="POST">
+        <textarea name="text" placeholder="Enter text here..." required></textarea>
+
+        <select name="algorithm">
+            <option value="aes">AES (Symmetric)</option>
+            <option value="rsa">RSA (Asymmetric)</option>
+            <option value="chacha">ChaCha20 (Modern)</option>
+            <option value="caesar">Caesar Cipher (Classic)</option>
+            <option value="base64">Base64 (Encoding)</option>
+        </select>
+
+        <div class="buttons">
+            <button name="action" value="encrypt">Encrypt</button>
+            <button name="action" value="decrypt">Decrypt</button>
+        </div>
+    </form>
+
+    {% if result %}
+    <div class="output">
+        <h3>Result:</h3>
+        <p>{{ result }}</p>
+    </div>
+    {% endif %}
+
+    {% if error %}
+    <div class="error">{{ error }}</div>
+    {% endif %}
+</div>
+
+</body>
+</html>
+
